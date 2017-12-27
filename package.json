@@ -1,0 +1,57 @@
+{
+  "name": "xiaoduyuReactNative",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "configureJPush": "node node_modules/jpush-react-native/JPushConfiguration.js",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "ios": "react-native run-ios",
+    "bundle-ios": "react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output release_ios/main.jsbundle --assets-dest release_ios/",
+    "android": "cd android && sudo ./gradlew clean && cd .. && sudo react-native run-android --deviceId 1ceb601b",
+    "bundle-android": "cd android && sudo ./gradlew assembleRelease && cd .."
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "jcore-react-native": "^1.1.8-beta2",
+    "jpush-react-native": "^2.0.8",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.46.4",
+    "react-native-actionsheet": "^2.2.2",
+    "react-native-cookie": "^0.2.0",
+    "react-native-flexi-radio-button": "^0.2.2",
+    "react-native-html-render": "^1.0.5",
+    "react-native-htmlview": "^0.12.1",
+    "react-native-image-crop-picker": "^0.16.0",
+    "react-native-iphone-x-helper": "^1.0.1",
+    "react-native-keyboard-spacer": "^0.3.1",
+    "react-native-lightbox": "^0.7.0",
+    "react-native-looped-carousel": "^0.1.7",
+    "react-native-modal-picker": "0.0.16",
+    "react-native-open-share": "git+https://github.com/mozillo/react-native-open-share.git",
+    "react-native-qiniu": "^0.3.0",
+    "react-native-qq": "^2.0.5",
+    "react-native-render-html": "^2.1.0",
+    "react-native-scrollable-tab-view": "^0.6.7",
+    "react-native-simple-picker": "^1.4.3",
+    "react-native-simple-radio-button": "^2.6.0",
+    "react-native-splash-screen": "^2.1.0",
+    "react-native-swipeout": "^2.3.1",
+    "react-native-webview-messaging": "^1.1.0",
+    "react-native-wechat": "^1.9.9",
+    "react-native-weibo": "^3.0.4",
+    "react-navigation": "^1.0.0-beta.15",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
