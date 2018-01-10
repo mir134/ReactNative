@@ -8,7 +8,9 @@
     "test": "jest",
     "ios": "react-native run-ios",
     "bundle-ios": "react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output release_ios/main.jsbundle --assets-dest release_ios/",
-    "android": "cd android && sudo ./gradlew clean && cd .. && sudo react-native run-android --deviceId 1ceb601b",
+    "bundle-android-Rn":"react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/",
+    "android": "react-native run-android",
+    "androidclean": "android/gradlew clean",
     "bundle-android": "cd android && sudo ./gradlew assembleRelease && cd .."
   },
   "dependencies": {
